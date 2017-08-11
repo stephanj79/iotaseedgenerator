@@ -1,0 +1,3 @@
+# iotaseedgenerator
+IOTA Seed Generator
+
