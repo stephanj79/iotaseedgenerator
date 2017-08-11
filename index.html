@@ -88,6 +88,11 @@
 <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript" src="js/qrcode.js"></script>
 <script type="text/javascript">
+    if (location.protocol != 'https:')
+    {
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }
+    
     var qrcode = new QRCode(document.getElementById("qrcode"), {
         width : 200,
         height : 200
