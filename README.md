@@ -1,3 +1,1 @@
-# iotaseedgenerator
-IOTA Seed Generator
-
+"# iotaseedgenerator" 
