@@ -23,8 +23,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
-    <!-- Custom styles for print template -->
-    <link href="css/cover.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
@@ -58,7 +56,10 @@
                     </nav>
                 </div>
             </div>
-
+            <div class="btn-group">
+                <a href="javascript:makeSeed();" type="button" class="btn btn-primary">Generate new Seed</a>
+                <a href="javascript:window.print();" type="button" class="btn btn-primary">Print Seed</a>
+            </div>
             <div class="inner cover">
                 <h1 class="cover-heading">IOTA Seed Generator</h1>
 
@@ -68,10 +69,7 @@
 
 
             </div>
-            <div class="btn-group">
-                <a href="javascript:makeSeed();" type="button" class="btn btn-primary">Generate new Seed</a>
-                <a href="javascript:window.print();" type="button" class="btn btn-primary">Print Seed</a>
-            </div>
+
 
             <div class="mastfoot">
                 <div class="inner">
