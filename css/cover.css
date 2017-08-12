@@ -62,13 +62,12 @@ body {
 
 /* Padding for spacing */
 .inner {
-    padding: 20px;
+    padding: 10px;
 }
 
 .inner.cover {
     background: rgba(16, 38, 49, 0.52);
     padding: 10px;
-    margin-top: -20px;
 }
 
 /*
@@ -180,7 +179,7 @@ body {
 
     .mastfoot {
         position: fixed;
-        bottom: -30px;
+        bottom: 0px;
     }
 
     /* Start the vertical centering */
