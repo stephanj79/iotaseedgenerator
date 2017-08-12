@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="IOTA Seed Online Generator">
+    <meta name="description" content="Free online IOTA Seed Online Generator, Print your Seed and Store">
+    <meta name="keywords" content="iota, seed, generator, free, online, wallet, light wallet, safe">
     <meta name="author" content="">
     <link rel="icon" href="image/ico.png">
-
+    <meta property="og:url"                content="https://iotaseed.org" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Safe and free online iota seed generator" />
+    <meta property="og:description"        content="Free and safe online IOTA Seed Online Generator, Print your Seed and Store" />
     <title>IOTA Seed Generator</title>
 
     <!-- Bootstrap core CSS -->
@@ -22,7 +27,8 @@
     <link href="css/cover.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -46,6 +52,7 @@
                     <nav>
                         <ul class="nav masthead-nav">
                             <li class="active"><a href="#">Home</a></li>
+                            <li><a href="https://github.com/stephanj79/iotaseedgenerator">Source at Github</a></li>
                             <li><a href="javascript:window.print();">Print</a></li>
                         </ul>
                     </nav>
@@ -56,20 +63,32 @@
                 <h1 class="cover-heading">IOTA Seed Generator</h1>
 
                 <div id="qrcode"></div>
-                <img id="logo" src="image/logo.png" >
-                <label id="text" type="text" /></label>
+                <img id="logo" src="image/logo.png">
+                <label id="text" type="text"/></label>
 
+
+            </div>
+            <div class="btn-group">
+                <a href="javascript:makeSeed();" type="button" class="btn btn-primary">Generate new Seed</a>
+                <a href="javascript:window.print();" type="button" class="btn btn-primary">Print Seed</a>
             </div>
 
             <div class="mastfoot">
                 <div class="inner">
-
+                    <p>This is not an official website of IOTA! </p>
+                    <p> We do not store any passwords. Source at <a href="https://github.com/stephanj79/iotaseedgenerator" title="Github Source Iotaseed">Github</a></p>
                     <p>
-                        Donate: BEDYKJPMSMKBHCMLZNSODECPNTO9TJNQHXTWVPJRBVDQDPDD9NDARDORDYOCYOZAGEQE9XTFIALNSIIPXWCBC9ESBX
+                        Donate IOTA:
+                        BEDYKJPMSMKBHCMLZNSODECPNTO9TJNQHXTWVPJRBVDQDPDD9NDARDORDYOCYOZAGEQE9XTFIALNSIIPXWCBC9ESBX
+                    </p>
+                    <p>
+                        Donate BTC: 1Bepv5U1AA9JXsft7z2LL3P3zMkNR2yzft
                     </p>
                     <p>Iota Seed Generator for <a href="https://iotaseed.org">https://iotaseed.org</a>,
                         by <a href="https://github.com/stephanj79">Stephan Jäger</a>.</p>
+
                 </div>
+
             </div>
 
         </div>
@@ -88,28 +107,26 @@
 <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript" src="js/qrcode.js"></script>
 <script type="text/javascript">
-    if (location.protocol != 'https:')
-    {
-        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    }
-
+    /* if (location.protocol != 'https:')
+     {
+         location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+     }
+ */
     var qrcode = new QRCode(document.getElementById("qrcode"), {
-        width : 200,
-        height : 200
+        width: 200,
+        height: 200
 
     });
 
-    function makeSeed () {
-        var text="";
+    function makeSeed() {
+        var text = "";
         for (i = 1; i <= 81; i++) {
-            var dez =Math.floor(Math.random() * 27) + 64;
-            if(dez==64)
-            {
-                text +="9";
+            var dez = Math.floor(Math.random() * 27) + 64;
+            if (dez == 64) {
+                text += "9";
             }
-            else
-            {
-                text +=String.fromCharCode(dez);
+            else {
+                text += String.fromCharCode(dez);
             }
         }
         var elText = document.getElementById("text");
@@ -121,8 +138,10 @@
 
         qrcode.makeCode(text);
     }
+
     makeSeed();
 
 
 </script>
-</body></html>
+</body>
+</html>
