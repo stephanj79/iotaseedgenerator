@@ -214,7 +214,7 @@ body {
         background-size: auto;
     }
 
-    .masthead, .mastfoot {
+    .masthead, .mastfoot, .notprint {
         display: none;
     }
 
@@ -254,9 +254,6 @@ body {
 
     .cover-heading {
         margin-left: -50px;
-    }
-    .btn-primary {
-        display: none!important;
     }
 }
 
