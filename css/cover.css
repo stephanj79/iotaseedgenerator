@@ -19,7 +19,6 @@ a:hover {
     border: 1px solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -34,10 +33,11 @@ body {
     background-size: cover;
     -webkit-print-color-adjust: exact;
 }
+
 body {
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -46,13 +46,15 @@ body {
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 }
+
 .site-wrapper-inner {
     display: table-cell;
     vertical-align: top;
 }
+
 .cover-container {
     margin-right: auto;
     margin-left: auto;
@@ -60,10 +62,13 @@ body {
 
 /* Padding for spacing */
 .inner {
-    padding: 30px;
+    padding: 20px;
 }
+
 .inner.cover {
-    background: rgba(16, 38, 49, 0.52);padding: 10px;
+    background: rgba(16, 38, 49, 0.52);
+    padding: 10px;
+    margin-top: -20px;
 }
 
 /*
@@ -77,24 +82,28 @@ body {
 .masthead-nav > li {
     display: inline-block;
 }
+
 .masthead-nav > li + li {
     margin-left: 20px;
 }
+
 .masthead-nav > li > a {
     padding-right: 0;
     padding-left: 0;
     font-size: 16px;
     font-weight: bold;
     color: #fff; /* IE8 proofing */
-    color: rgba(255,255,255,.75);
+    color: rgba(255, 255, 255, .75);
     border-bottom: 2px solid transparent;
 }
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
     background-color: transparent;
     border-bottom-color: #a9a9a9;
-    border-bottom-color: rgba(255,255,255,.25);
+    border-bottom-color: rgba(255, 255, 255, .25);
 }
+
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
@@ -106,28 +115,29 @@ body {
     .masthead-brand {
         float: left;
     }
+
     .masthead-nav {
         float: right;
     }
 }
 
-
 /*
  * Cover
  */
-.cover-heading{
+.cover-heading {
     padding-top: 0px;
     position: absolute;
     padding-left: 350px;
 }
+
 .cover {
     padding: 0 0px;
 }
+
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;
 }
-
 
 /*
  * Footer
@@ -135,26 +145,27 @@ body {
 
 .mastfoot {
     color: #999; /* IE8 proofing */
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
 }
 
 /*
  * QR-Code
  */
-#qrcode{
-    margin:10px 90px;
+#qrcode {
+    margin: 10px 90px;
 }
-#logo{
+
+#logo {
     position: relative;
     margin-top: 70px;
     margin-left: -124px;
     width: 300px;
     margin-bottom: 50px;
 }
-#text{
+
+#text {
     margin-top: 10px;
 }
-
 
 /*
  * Affix and center
@@ -166,14 +177,17 @@ body {
         position: fixed;
         top: 0;
     }
+
     .mastfoot {
         position: fixed;
-        bottom: 0;
+        bottom: -30px;
     }
+
     /* Start the vertical centering */
     .site-wrapper-inner {
         vertical-align: middle;
     }
+
     /* Handle the widths */
     .masthead,
     .mastfoot,
@@ -200,39 +214,53 @@ body {
         background: url("../image/space-bg.jpg") no-repeat top left;
         background-size: auto;
     }
-    .masthead, .mastfoot{
-        display:none;
+
+    .masthead, .mastfoot {
+        display: none;
     }
-    #text{
+
+    #text {
         background: #102631;
     }
-    .cover-heading{
+
+    .cover-heading {
         padding-top: 0px;
         position: absolute;
         padding-left: -100px;
     }
-    #qrcode{
-       /*margin-left:390px;*/
+
+    #qrcode {
+        /*margin-left:390px;*/
         margin-top: 80px;
         margin-bottom: 20px;
-        border:solid 5px #ffffff;
+        border: solid 5px #ffffff;
     }
-    #text{
+
+    #text {
         margin-top: 10px;
-        size: 18px;
+        size: 24px;
     }
-    #logo{
+
+    #logo {
         position: relative;
         margin-top: 35px;
         margin-left: -120px;
         margin-bottom: 10px;
     }
+
     .inner.cover {
         background: none;
         padding: 10px;
     }
-    .cover-heading
-    {
+
+    .cover-heading {
         margin-left: -50px;
     }
+    .btn-primary {
+        display: none!important;
+    }
+}
+
+.btn-primary {
+    background: rgba(16, 38, 49, 0.52);
 }
