@@ -154,6 +154,10 @@ body {
     margin: 10px 90px;
 }
 
+.btn-group {
+    margin-top: -20px;
+}
+
 #logo {
     position: relative;
     margin-top: 70px;
