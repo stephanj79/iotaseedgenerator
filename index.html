@@ -16,18 +16,18 @@
     <title>IOTA Seed Generator</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
-    <script src="http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="https://getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,8 +57,8 @@
                 </div>
             </div>
             <div class="btn-group">
-                <a href="javascript:makeSeed();" type="button" class="btn btn-primary">Generate new Seed</a>
-                <a href="javascript:window.print();" type="button" class="btn btn-primary">Print Seed</a>
+                <a href="javascript:makeSeed();" type="button" class="btn btn-primary notprint">Generate new Seed</a>
+                <a href="javascript:window.print();" type="button" class="btn btn-primary notprint">Print Seed</a>
             </div>
             <div class="inner cover">
                 <h1 class="cover-heading">IOTA Seed Generator</h1>
@@ -100,16 +100,16 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript" src="js/qrcode.js"></script>
 <script type="text/javascript">
-    /* if (location.protocol != 'https:')
+     if (location.protocol != 'https:')
      {
          location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
      }
- */
+
     var qrcode = new QRCode(document.getElementById("qrcode"), {
         width: 200,
         height: 200
